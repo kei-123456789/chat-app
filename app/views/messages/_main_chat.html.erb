@@ -2,7 +2,7 @@
   <div class="chat-a">
     <%= @room.name %>
     <div class="fin-button">
-      <%= link_to "チャットを終了する", "" %>
+      <%= link_to "チャットを終了する", room_path(@room), method: :delete %>
     </div>
   </div>
   <div class="chat-b">
