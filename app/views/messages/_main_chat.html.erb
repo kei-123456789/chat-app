@@ -6,20 +6,7 @@
     </div>
   </div>
   <div class="chat-b">
-    <div class="chat-box">
-      <div class="chat-small">
-        <div class="chat-name">Ace</div>
-        <div class="chat-date">2022/05/01</div>
-      </div>
-      <div class=chat-comment>こんにちは</div>
-    </div>
-    <div class="chat-box">
-      <div class="chat-small">
-        <div class="chat-name">Joker</div>
-        <div class="chat-date">2022/05/01</div>
-      </div>
-      <div class=chat-comment>こんばんは</div>
-    </div>
+    <%= render partial: 'message', collection: @messages %>
   </div>
   <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
   <div class="form">
